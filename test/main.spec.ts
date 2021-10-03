@@ -1,7 +1,7 @@
 import { Server } from "@hapi/hapi";
 
-import { init } from "../src/server";
-import { setup as setupRoutes } from "../src/routes";
+import { init } from "../src/server/server";
+import { setup as setupRoutes } from "../src/server/routes";
 
 describe("smoke test", () => {
     let server: Server;

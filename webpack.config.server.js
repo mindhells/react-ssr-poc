@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
   name: 'server',
   entry: {
-    main: path.resolve(__dirname, 'src/main.ts'),
+    server: path.resolve(__dirname, 'src/server/main.ts'),
   },
   mode: 'production',
   output: {
@@ -25,7 +25,7 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
-          configFile: 'tsconfig.json',
+          configFile: 'tsconfig.server.json',
         },
       },
     ],

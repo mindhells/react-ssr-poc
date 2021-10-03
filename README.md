@@ -1,7 +1,5 @@
 
-# RSSR
-
-React server side rendering proof of concept
+# React server side rendering proof of concept
 
 ## Boilerplate
 
@@ -19,12 +17,23 @@ corepack yarn add -D @types/jest
 npx ts-jest config:init
 # webpack
 corepack yarn add -D webpack webpack-cli ts-loader webpack-node-externals
+# ReactJS
+corepack yarn add react react-dom
+corepack yarn add -D @types/react @types/react-dom
+corepack yarn add -D clean-webpack-plugin webpack-manifest-plugin
 ```
 
 ## Run the server
 
 ```bash
 corepack yarn dev
+```
+
+## Build with webpack
+
+```bash
+corepack yarn build:server
+corepack yarn build:client
 ```
 
 ## Run the tests
