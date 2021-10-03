@@ -17,6 +17,8 @@ corepack yarn add @hapi/hapi
 corepack yarn add -D jest ts-jest
 corepack yarn add -D @types/jest
 npx ts-jest config:init
+# webpack
+corepack yarn add -D webpack webpack-cli ts-loader webpack-node-externals
 ```
 
 ## Run the server
@@ -37,3 +39,11 @@ corepack yarn tdd
 
 - [Hapi with typescript](https://www.solarwinter.net/using-typescript-with-hapi/)
 - [NodeJS + React SSR](https://nils-mehlhorn.de/posts/typescript-nodejs-react-ssr)
+- [Corepack: manager of package managers](https://dev.to/cloudx/corepack-the-node-js-manager-of-package-managers-44dd)
+
+## ToDo
+- lint and prettier config
+- yarn from sources + vscode sdk
+- .vscode configs
+- workspaces (monorepo)
+- apply some patterns (DI, builder)

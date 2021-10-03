@@ -1,14 +1,15 @@
 {
-  "name": "RSSR",
+  "name": "react-ssr-poc",
   "version": "1.0.0",
   "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
     "dev:tsc": "tsc --watch -p .",
-    "dev:serve": "nodemon -e js -w dist dist/main.js",
+    "dev:server": "nodemon -e js -w dist dist/main.js",
     "dev": "run-p dev:*",
     "test": "jest",
-    "tdd": "npx jest --watch"
+    "tdd": "npx jest --watch",
+    "build:server": "webpack --config webpack.config.server.js"
   },
   "devDependencies": {
     "@types/hapi__hapi": "^20.0.9",
@@ -18,7 +19,11 @@
     "nodemon": "^2.0.13",
     "npm-run-all": "^4.1.5",
     "ts-jest": "^27.0.5",
-    "typescript": "^4.4.3"
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack": "^5.56.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "@hapi/hapi": "^20.2.0"
