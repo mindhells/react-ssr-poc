@@ -21,6 +21,10 @@ corepack yarn add -D webpack webpack-cli ts-loader webpack-node-externals
 corepack yarn add react react-dom
 corepack yarn add -D @types/react @types/react-dom
 corepack yarn add -D clean-webpack-plugin webpack-manifest-plugin
+# template engine
+corepack yarn add ejs @hapi/vision @hapi/inert
+corepack yarn add -D copy-webpack-plugin @types/ejs @types/hapi__vision @types/hapi__inert
+
 ```
 
 ## Run the server
